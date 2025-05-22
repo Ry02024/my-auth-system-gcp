@@ -1,0 +1,18 @@
+# Python
+venv*/
+*.pyc
+__pycache__/
+*.log
+
+# IDE / OS
+.vscode/
+.idea/
+*.DS_Store
+
+# Environment files
+auth_server_flask/.env
+# streamlit_app/.env # Streamlitはsecrets.tomlを使うので不要
+
+# Secrets (念のため)
+*.pem
+*.key
