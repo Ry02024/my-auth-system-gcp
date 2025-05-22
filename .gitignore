@@ -7,11 +7,15 @@ __pycache__/
 # IDE / OS
 .vscode/
 .idea/
-*.DS_Store
+*.DS_Store # macOSの隠しファイル (ドットから始まるので注意)
+Thumbs.db # Windowsの画像キャッシュファイル
 
 # Environment files
 auth_server_flask/.env
-# streamlit_app/.env # Streamlitはsecrets.tomlを使うので不要
+# streamlit_app/.env # Streamlitはsecrets.tomlを使うので不要とコメントアウトでOK
+
+# Streamlit secrets
+streamlit_app/.streamlit/secrets.toml
 
 # Secrets (念のため)
 *.pem
