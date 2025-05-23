@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+textarea#memo_text {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* So padding doesn't add to width */
+}
+
+button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button#delete_button {
+  background-color: #d9534f;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#memos_container {
+  margin-top: 20px;
+}
+
+.memo-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  display: flex; /* To align memo text and delete button */
+  justify-content: space-between; /* Pushes button to the right */
+  align-items: center; /* Vertically aligns items in the center */
+}
+
+.memo-item button {
+  background-color: #f0ad4e; /* Orange color for individual delete buttons */
+  font-size: 0.8em; /* Smaller button */
+  padding: 5px 10px; /* Smaller padding */
+}
